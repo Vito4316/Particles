@@ -3,7 +3,7 @@ project(Particles)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(SFML_DIR "D:/GameTry/SFML-2.5.1a/lib/cmake/SFML")
+set(SFML_DIR "SFML-2.5.1a/lib/cmake/SFML")
 
 find_package(SFML 2.5.1 COMPONENTS graphics audio system main REQUIRED)
 add_executable(Particles main.cpp Particles.cpp Particles.h Particle.tpp Particle.h RainbowColorGenerator.h ColorGenerator.h MassPosition.cpp MassPosition.h MyMath.h timeBenchmark.h Defines.h MyMath.cpp Collision.cpp Collision.h CollisionsList.cpp CollisionsList.h)
