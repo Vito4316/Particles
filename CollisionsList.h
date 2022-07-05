@@ -5,6 +5,7 @@
 #ifndef PARTICLES_COLLISIONSLIST_H
 #define PARTICLES_COLLISIONSLIST_H
 #include <unordered_set>
+#include <cstdint>
 
 struct CollisionID {
 public:
@@ -33,7 +34,6 @@ namespace std {
             return hash<uint64_t>()(k.idA) + hash<uint64_t>()(k.idB);
         }
     };
-
 }
 
 class CollisionsList{
